@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="The students in DS5010 Spring 2022">
+  <title>Greater Portland Odor Project</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="Broadband%20Project_files/bootstrap.css" rel="stylesheet">
+  <link href="static\css\quotesrotator.css" rel="stylesheet" type="text/css"/>
+
+  <style>
+    body {
+      padding-top: 56px;
+      /* make room for the fixed-top navbar */
+    }
+  </style>
+
+<style class="oi-ec050e">.oi-ec050e{--length1:3.25px;--length2:6.5px;--length3:13px;--label-width:120px;--input-width:240px;font:13px/1.2 var(--sans-serif)}form.oi-ec050e{display:flex;align-items:center;flex-wrap:wrap;min-height:25.5px}form.oi-ec050e>label{width:100%;padding-bottom:3px}form.oi-ec050e-toggle{flex-wrap:nowrap}form.oi-ec050e-toggle>label{align-self:start;padding:5px 0 4px 0;margin-right:var(--length2)}form.oi-ec050e-toggle .oi-ec050e-input,form.oi-ec050e-toggle>label{width:initial}@media only screen and (min-width:30em){form.oi-ec050e{flex-wrap:nowrap;width:calc(var(--input-width) + var(--label-width));max-width:100%}form.oi-ec050e>label{flex-shrink:0;align-self:start;padding:5px 0 4px 0;width:var(--label-width);margin-right:var(--length2)}}.oi-ec050e button,.oi-ec050e input,.oi-ec050e select,.oi-ec050e table,.oi-ec050e textarea{color:inherit;font:inherit;box-sizing:border-box}.oi-ec050e button,.oi-ec050e input{line-height:normal}.oi-ec050e>button:first-of-type{margin-left:0}.oi-ec050e-textarea{--input-width:520px}.oi-ec050e-textarea>div{width:100%;text-align:right}.oi-ec050e-textarea>div textarea{display:block;width:100%;margin:0;padding:4px;min-height:calc(2.5em + 8px);max-height:calc(14em + 8px);resize:vertical}.oi-ec050e-textarea>div button{margin:4px 0 0}.oi-ec050e input[type=checkbox],.oi-ec050e input[type=radio]{margin-right:var(--length2)}.oi-ec050e-input{display:flex;align-items:center;width:100%}.oi-ec050e-input>button,.oi-ec050e-input>input,.oi-ec050e-input>output{width:inherit;min-width:0}.oi-ec050e-input>button,.oi-ec050e-input>input[type=number],.oi-ec050e-input>output{flex-shrink:2.5}.oi-ec050e-input>output{white-space:pre;margin-left:var(--length2)}.oi-ec050e-input>button{margin-left:var(--length1)}.oi-ec050e-input>input[type=number]{font-variant-numeric:tabular-nums;flex-shrink:1.5;text-overflow:ellipsis}.oi-ec050e-input>input[type=color]~output{font-family:ui-monospace,var(--monospace)}.oi-ec050e-input:not(:only-child)>input[type=color]~output{flex-shrink:1}.oi-ec050e-input>input[type=range]{margin:0;margin-left:var(--length2)}.oi-ec050e-input>input[type=date],.oi-ec050e-input>input[type=datetime-local]{height:22px}form.oi-ec050e-checkbox{width:auto;max-width:640px}.oi-ec050e-checkbox div label{display:inline-flex;align-items:center;margin-right:var(--length3)}form.oi-ec050e-table{display:block;overflow-y:auto;margin:0 -14px;width:100%}.oi-ec050e-table table{max-width:initial;min-height:33px;margin:0;border-collapse:separate;border-spacing:0;font-variant-numeric:tabular-nums}.oi-ec050e-table tr:not(:last-child) td,.oi-ec050e-table tr:not(:last-child) th{border-bottom:solid 1px #eee}.oi-ec050e-table thead tr td,.oi-ec050e-table thead tr th{border-bottom:solid 1px #ccc}.oi-ec050e-table thead th span{display:inline-block;width:.5em;margin-left:-.5em}.oi-ec050e-table td,.oi-ec050e-table th{white-space:nowrap;text-overflow:ellipsis;overflow:hidden;padding:3px 6.5px 3px 0}.oi-ec050e-table tr>:not(:first-of-type){padding-left:var(--length2)}.oi-ec050e-table tr>:last-of-type{padding-right:var(--length3)}.oi-ec050e-table tr>:first-of-type{text-overflow:unset;width:19px}.oi-ec050e-table tr>:first-of-type input{opacity:0;margin:0 3px 1px 4px}.oi-ec050e-table tr:hover>:first-of-type input:enabled,.oi-ec050e-table tr>:first-of-type input:checked,.oi-ec050e-table tr>:first-of-type input:focus,.oi-ec050e-table tr>:first-of-type input[type=checkbox]:indeterminate{opacity:inherit}.oi-ec050e-table thead tr{border-bottom:none}.oi-ec050e-table thead th{position:sticky;top:0;background:#fff;cursor:ns-resize}.oi-ec050e-table tbody tr:first-child td{padding-top:4px}</style>
+
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/d/095056cccbc4d2e6.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "map") return new Inspector(document.querySelector("#observablehq-map-c6323fcd"));
+  if (name === "brush") return new Inspector(document.querySelector("#observablehq-brush-c6323fcd"));
+  return ["brushed","styling"].includes(name);
+});
+</script>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#visuals">Visuals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#map">Map</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#analysis">Analysis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#acknowledgements">Acknowledgements</a>
+          </li>
+        </ul>
+        <a href="http://github.com/ds5110/stinky2" class="nav-item align-right mx-2">
+          <img src="Broadband%20Project_files/github.png" width="32px">
+        </a>
+      </div>
+    </div><!-- /.container -->
+  </nav>
+
+  <div class="container">
+
+    <div class="row pt-2">
+      <div class="col">
+        <div class="p-5 bg-light rounded-3 border">
+          <h1 class="display-5 fw-bold">Noticed an industrial odor near South Portland?</h1>
+          <p class="fs-4">South Portland and Portland have been tracking these smell complaints since 2019. If you've been
+          smelling something, you're not alone.
+        </p></div>
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+
+
+    <div id="visuals" class="row align-items-md-stretch p-2">
+      <div class="col-md-12">
+        <div class="clearfix">
+		
+			<div class="slideshow-container">
+				<div class="comment">
+				  <q>Imagine you buy a house in south Portland and smell gas fumes everyday.</q>
+				  <p class="author">- Portland resident</p>
+				</div>
+
+				<div class="comment">
+				  <q>Would be pretty cool if the city of south portland prioritized the health of it's citizens</q>
+				  <p class="author">- Portland resident</p>
+				</div>
+
+				<div class="comment">
+				  <q>I have to go inside because the air smells terrible. </q>
+				  <p class="author">- Portland resident</p>
+				</div>
+				
+				<div class="comment">
+				  <q>This happens at night and runs off into the morning. Woke us up even with our windows closed.</q>
+				  <p class="author">- Portland resident</p>
+				</div>
+				
+				<div class="comment">
+				  <q>The smell of gas was very strong last night in the cash corner area.</q>
+				  <p class="author">- Portland resident</p>
+				</div>
+				
+				<div class="comment">
+				  <q>Smelled strong oil on outer Broadway near the greater Portland Christian school.</q>
+				  <p class="author">- Portland resident</p>
+				</div>
+				
+				<div class="comment">
+				  <q>I noticed this smell again several times this week. The odor seems stronger this week than it has been in the past. I cannot be outside. </q>
+				  <p class="author">- Portland resident</p>
+				</div>
+				
+				<div class="comment">
+				  <q>Very irritating overwhelming. Occurred on veterans bridge at 9 PM last night next to Sprague oil tanks </q>
+				  <p class="author">- Portland resident</p>
+				</div>
+				
+				<div class="comment">
+				  <q>Started about an hour ago. Windy day but the smell has been persistent. </q>
+				  <p class="author">- Portland resident</p>
+				</div>
+				
+				<div class="comment">
+				  <q>I live in the West End. Many days this summer the odor has been very unpleasant. It feels toxic.</q>
+				  <p class="author">- Portland resident</p>
+				</div>
+				
+				<div class="comment">
+				  <q>Criminal this is still happening all years. Authorities let it go on...and....on.</q>
+				  <p class="author">- Portland resident</p>
+				</div>
+
+				<a class="prev" onclick="plusSlides(-1)"></a>
+				<a class="next" onclick="plusSlides(1)"></a>
+
+				</div>
+
+				<div class="dot-container">
+				  <span class="dot" onclick="currentSlide(1)"></span> 
+				  <span class="dot" onclick="currentSlide(2)"></span> 
+				  <span class="dot" onclick="currentSlide(3)"></span> 
+				</div>
+					  
+          <h2>Strong Industrial Odors</h2>
+          <p>Residents in South Portland and Portland have often described strong neighborhood odors for years. These
+          smells were frequently described as industrial in nature; given the large oil storage tanks nearby, local and
+          state governments have been working to gauge the severity of the problem.</p>
+          <p>
+            These cities have tracked thousands online smell complaints for this issue, logging the date, location, odor
+            descriptions, and personal symptoms. You can visually explore this data for yourself below.</p>
+           
+          <div id="observablehq-map-c6323fcd"></div>
+          <div id="observablehq-brush-c6323fcd"></div>
+
+          <p>Each dot on the map above shows the location of a single complaint. The scatter plot below it acts as filter
+          that lets you look for complaints within a certain time or wind direction. You can drag or resize the grey box
+          on the scatter plot to change which complaints show above. Try making the filter short and wide to show
+          complaints only on days when the wind is blowing in a single direction. If you move that filter up and down,
+          you'll see an elevated number of complaints when the wind is blowing from 180 degrees. This is from the south,
+          in the direction of South Portland's oil storage tanks.</p>
+
+          <h2>What does it smell like?</h2>
+          <p>Throughout thousands of complaints, several descriptions of the local smells are repeated often:
+          "petroleum", "tar", "oil", "asphalt", "sulfur", "gas". Hundreds of the complaints also mention feeling nausea,
+          throat irritation, and headaches.</p>
+          <img src="images/complaint_words.png" />
+          <h2>Where and when do the smells occur?</h2>
+          <p>The smells are reported most frequently along South Portland's northern coastline and throughout Portland's
+          West End. There is a strong seasonal component to the complaints, which increase in the summer with higher
+          temperatures.</p>
+          <img src="images/scatter_temp_vs_complaints.png" width="500px" />
+          <p>The smells appear to correlate strongly with wind direction in some places. Inside Portland's West End,
+          odor complaints are much likelier on days the wind is blowing from the south - i.e., the direction of South
+          Portland's oil storage tanks. See the histogram below, which displays the number of complaints
+          in the West End when the wind is blowing from each direction.</p>
+          <img src="images/wc_hist_west_end.png" width="500px" />
+        </div>
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+
+    <div id="analysis" class="row align-items-md-stretch pt-2">
+      <div class="col-md-12">
+        <div class="p-5 bg-light border rounded-3">
+          <h1 class="display-5 fw-bold">Analysis</h1>
+          <p>This space is reserved for further commentary pending conversation with the stakeholders.</p>
+        </div>
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+
+    <div id="acknowledgements" class="row align-items-md-stretch pt-2">
+      <div class="col-md-12">
+        <div class="p-5 mb-6 bg-light border rounded-3">
+          <p class="fw-bold fs-4">Acknowledgements</p>
+          <p>Developed by data science students at The Roux Institute, Northeastern University.</p>
+          <p>Thank you to the Greater Portland Council of Governments (GPCOG) for the interesting project.</p>
+        </div>
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+
+    <footer class="pt-2 mt-2 text-muted border-top">
+      © 2022 DS5110
+    </footer>
+  </div><!-- /.container -->
+
+  <script src="Broadband%20Project_files/popper.js"></script>
+  <script src="Broadband%20Project_files/bootstrap.js"></script>
+  <script src="static/scripts/quotesrotator.js"></script>
+  <script type="module">
+
+    // Load the Observable runtime and inspector.
+    import { Runtime, Inspector } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+
+    // Your notebook, compiled as an ES module.
+    import notebook from "https://api.observablehq.com/d/a9e917990e3d4594.js?v=3";
+
+    // Load the notebook, rendering the value of each cell into the provided DOM node.
+    new Runtime().module(notebook, name => {
+      if (name === "viewof counties") {
+//        return new Inspector(document.querySelector("#observable-counties"));
+      }
+      if (name === "map") {
+        return new Inspector(document.querySelector("#observable-map"));
+      }
+      if (name === "viewof type") {
+        return new Inspector(document.querySelector("#observable-type"));
+      }
+      if (name === "viewof buttons") {
+        return new Inspector(document.querySelector("#observable-buttons"));
+      }
+      if (name === "data") return true;
+      if (name === "initialize") return true;
+    });
+
+  </script>
+
+
+
+</body></html>
