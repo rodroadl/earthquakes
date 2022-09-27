@@ -153,8 +153,8 @@ new Runtime().module(define, name => {
             These cities have tracked thousands online smell complaints for this issue, logging the date, location, odor
             descriptions, and personal symptoms. You can visually explore this data for yourself below.</p>
            
-          <div id="observablehq-map-c6323fcd"></div>
-          <div id="observablehq-brush-c6323fcd"></div>
+          <div id="observablehq-mymap-ac7f14be"></div>
+          <div id="observablehq-viewof-selection-ac7f14be"></div>
 
           <p>Each dot on the map above shows the location of a single complaint. The scatter plot below it acts as filter
           that lets you look for complaints within a certain time or wind direction. You can drag or resize the grey box
@@ -206,34 +206,21 @@ new Runtime().module(define, name => {
     </footer>
   </div><!-- /.container -->
 
-  <script src="Broadband%20Project_files/popper.js"></script>
-  <script src="Broadband%20Project_files/bootstrap.js"></script>
-  <script src="static/scripts/quotesrotator.js"></script>
+  <script src="popper.js"></script>
+  <script src="bootstrap.js"></script>
+  <script src="quotesrotator.js"></script>
   <script type="module">
 
-    // Load the Observable runtime and inspector.
-    import { Runtime, Inspector } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-
-    // Your notebook, compiled as an ES module.
-    import notebook from "https://api.observablehq.com/d/a9e917990e3d4594.js?v=3";
-
-    // Load the notebook, rendering the value of each cell into the provided DOM node.
-    new Runtime().module(notebook, name => {
-      if (name === "viewof counties") {
-//        return new Inspector(document.querySelector("#observable-counties"));
-      }
-      if (name === "map") {
-        return new Inspector(document.querySelector("#observable-map"));
-      }
-      if (name === "viewof type") {
-        return new Inspector(document.querySelector("#observable-type"));
-      }
-      if (name === "viewof buttons") {
-        return new Inspector(document.querySelector("#observable-buttons"));
-      }
-      if (name === "data") return true;
-      if (name === "initialize") return true;
-    });
+    <script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@rodroadl/earthquakes-with-slider.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "mymap") return new Inspector(document.querySelector("#observablehq-mymap-ac7f14be"));
+  if (name === "viewof selection") return new Inspector(document.querySelector("#observablehq-viewof-selection-ac7f14be"));
+  if (name === "data") return True;
+  if (name === "quakes") return True;
+  return ["x","xAxis","y","yAxis"].includes(name);
+});
 
   </script>
 
