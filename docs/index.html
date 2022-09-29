@@ -84,12 +84,12 @@ new Runtime().module(define, name => {
   <script src="/quotesrotator.js"></script>
   <script type="module">
 
-    <script type="module">
+  <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
 import define from "https://api.observablehq.com/@rodroadl/earthquakes-with-slider.js?v=3";
 new Runtime().module(define, name => {
   if (name === "viewof selection") return new Inspector(document.querySelector("#observablehq-viewof-selection-ac7f14be"));
-  if (name === "Initialize") return new Inspector(document.querySelector("#observablehq-Initialize-4e4cb81f"));
+  if (name === "Initialize") return True;
   if (name === "mymap") return new Inspector(document.querySelector("#observablehq-mymap-ac7f14be"));
   if (name === "data") return True;
   if (name === "quakes") return True;
