@@ -26,7 +26,6 @@ import define from "https://api.observablehq.com/@rodroadl/earthquakes-with-slid
 new Runtime().module(define, name => {
   if (name === "mymap") return new Inspector(document.querySelector("#observablehq-mymap-ac7f14be"));
   if (name === "viewof selection") return new Inspector(document.querySelector("#observablehq-viewof-selection-ac7f14be"));
-  if (name === "Initialize") return True;
 });
 </script>
 
