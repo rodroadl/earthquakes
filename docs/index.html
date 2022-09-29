@@ -26,7 +26,7 @@ import define from "https://api.observablehq.com/@rodroadl/earthquakes-with-slid
 new Runtime().module(define, name => {
   if (name === "mymap") return new Inspector(document.querySelector("#observablehq-mymap-ac7f14be"));
   if (name === "viewof selection") return new Inspector(document.querySelector("#observablehq-viewof-selection-ac7f14be"));
-  if (name === "Initialize") return new Inspector(document.querySelector("#observablehq-Initialize-4e4cb81f"));
+  if (name === "Initialize") return True;
 });
 </script>
 
@@ -89,7 +89,7 @@ import define from "https://api.observablehq.com/@rodroadl/earthquakes-with-slid
 new Runtime().module(define, name => {
   if (name === "mymap") return new Inspector(document.querySelector("#observablehq-mymap-ac7f14be"));
   if (name === "viewof selection") return new Inspector(document.querySelector("#observablehq-viewof-selection-ac7f14be"));
-  if (name === "Initialize") return new Inspector(document.querySelector("#observablehq-Initialize-4e4cb81f"));
+  if (name === "Initialize") return True;
   if (name === "data") return True;
   if (name === "quakes") return True;
   return ["x","xAxis","y","yAxis"].includes(name);
