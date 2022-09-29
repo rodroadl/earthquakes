@@ -25,7 +25,6 @@ import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/run
 import define from "https://api.observablehq.com/@rodroadl/earthquakes-with-slider.js?v=3";
 new Runtime().module(define, name => {
   if (name === "viewof selection") return new Inspector(document.querySelector("#observablehq-viewof-selection-ac7f14be"));
-  if (name === "Initialize") return True;
   if (name === "mymap") return new Inspector(document.querySelector("#observablehq-mymap-ac7f14be"));
 
 });
@@ -89,7 +88,6 @@ import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/run
 import define from "https://api.observablehq.com/@rodroadl/earthquakes-with-slider.js?v=3";
 new Runtime().module(define, name => {
   if (name === "viewof selection") return new Inspector(document.querySelector("#observablehq-viewof-selection-ac7f14be"));
-  if (name === "Initialize") return True;
   if (name === "mymap") return new Inspector(document.querySelector("#observablehq-mymap-ac7f14be"));
   if (name === "data") return True;
   if (name === "quakes") return True;
